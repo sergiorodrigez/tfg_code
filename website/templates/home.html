@@ -1,0 +1,40 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center my-4">{{ language[2] }}</h1>
+
+    <div class="row">
+        <!-- News Section -->
+        <div class="col-md-12">
+            <h2 class="text-center mb-4">{{ language[12] }}</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41598-024-65974-6/MediaObjects/41598_2024_65974_Fig1_HTML.png" alt="Nature Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ language[13] }}</h5>
+                        <p class="card-text">{{ language[14] }}</p>
+                        <a href="https://www.nature.com/articles/s41598-024-65974-6?fromPaywallRec=false" class="btn btn-primary" target="_blank">{{ language[19] }}</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://www.sammobile.com/wp-content/uploads/2024/04/Impulse-portada.jpg" alt="Samsung Impulse App">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ language[15] }}</h5>
+                        <p class="card-text">{{ language[16] }}</p>
+                        <a href="https://www.sammobile.com/news/samsung-new-impulse-app-ai-help-people-with-speech-disorders/" class="btn btn-primary" target="_blank">{{ language[19] }}</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://www.frontiersin.org/files/Articles/1096145/fpsyg-14-1096145-HTML/image_m/fpsyg-14-1096145-g001.jpg" alt="Frontiers in Psychology">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ language[17] }}</h5>
+                        <p class="card-text">{{ language[18] }}</p>
+                        <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1096145/full" class="btn btn-primary" target="_blank">{{ language[19] }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

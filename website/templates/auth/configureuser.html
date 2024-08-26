@@ -1,0 +1,63 @@
+{% extends "base.html" %} 
+{% block title %}{{ 'Configure User' }}{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <h3 align="center">{{ language[9] }}</h3>
+        <div class="form-group">
+            <label for="email">{{ language[10] }}</label>
+            <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="{{ language[11] }}"
+                value="{{ user.email }}"
+            />
+        </div>
+        <div class="form-group">
+            <label for="password">{{ language[12] }}</label>
+            <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="{{ language[13] }}"
+            />
+        </div>
+        <div class="form-group">
+            <label for="password2">{{ language[14] }}</label>
+            <input
+                type="password"
+                class="form-control"
+                id="password2"
+                name="password2"
+                placeholder="{{ language[15] }}"
+            />
+        </div>
+        <div class="form-group">
+            <label for="first_name">{{ language[16] }}</label>
+            <input
+                type="text"
+                class="form-control"
+                id="first_name"
+                name="first_name"
+                placeholder="{{ language[17] }}"
+                value="{{ user.first_name }}"
+            />
+        </div>
+        <div class="form-group">
+            <label for="language">{{ language[18] }}</label>
+            <select class="form-control" id="language" name="language">
+                <option value="en" {% if user.language == 'en' %}selected{% endif %}>English</option>
+                <option value="es" {% if user.language == 'es' %}selected{% endif %}>Español</option>
+                <option value="fr" {% if user.language == 'fr' %}selected{% endif %}>Français</option>
+                <option value="pt" {% if user.language == 'pt' %}selected{% endif %}>Português</option>
+                <option value="it" {% if user.language == 'it' %}selected{% endif %}>Italiano</option>
+                <option value="de" {% if user.language == 'de' %}selected{% endif %}>Deutsch</option>
+            </select>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">{{ language[19]}}</button>
+    </form>
+{% endblock %}
