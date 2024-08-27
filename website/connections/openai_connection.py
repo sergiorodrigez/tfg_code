@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 class OpenAIConnection:
-    client = OpenAI(api_key = "sk-proj-zgtHiETf3CcyWejoDrbQT3BlbkFJarWP3i5v3b1vJ9BILNX0")
+    client = OpenAI(api_key = "API_KEY")
 
     @staticmethod
     def create_paragraph(messages):
