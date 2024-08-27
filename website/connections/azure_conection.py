@@ -3,7 +3,7 @@ import azure.cognitiveservices.speech as speechsdk
 class AzureConnection:
     @staticmethod
     def text_to_speech(text):
-        speech_key = "28953521c5604f22909c512ddf41d2f3" 
+        speech_key = "API_KEY" 
         service_region = "centralus"  
         speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
         synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config)
